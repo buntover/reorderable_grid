@@ -611,6 +611,7 @@ class ReorderableGridViewState extends State<ReorderableGridView> {
         final double animValue = Curves.easeInOut.transform(animation.value);
         final double elevation = lerpDouble(0, 6, animValue)!;
         return Material(
+          color: Colors.transparent,
           elevation: elevation,
           child: child,
         );
